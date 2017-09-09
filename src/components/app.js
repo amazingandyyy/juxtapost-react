@@ -1,15 +1,13 @@
-import React, {
-  Component
-} from 'react';
-import Graph from './graph.js';
+import React, {Component} from 'react'
 import Character from './character.js'
+import Graph from './graph.js'
 
 export default class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
       input: '',
-      characters: []
+      characters: ['Test1','Test2','Test3','Test4','Test5']
     }
   }
 
@@ -40,9 +38,8 @@ export default class App extends Component {
             </button>
           </form>
         </div>
-        <div className="characterList col md12 center">
-
-        </div>
+        <br />
+        <Character character={this.state.character} />
         <br />
         <Graph />
       </div>
