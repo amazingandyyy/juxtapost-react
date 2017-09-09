@@ -1,6 +1,7 @@
 import React, {
   Component
 } from 'react';
+import Graph from './graph.js';
 
 export default class App extends Component {
   constructor(props) {
@@ -38,12 +39,11 @@ export default class App extends Component {
             </button>
           </form>
         </div>
-        <div className="characterList col md12">
+        <div className="characterList col md12 center">
 
         </div>
-        <div className="graph col md12">
-          <img src='https://i.stack.imgur.com/f48Tj.png' className=''></img>
-        </div>
+        <br />
+        <Graph />
       </div>
     );
   }
