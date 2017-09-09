@@ -2,6 +2,7 @@ import React, {
   Component
 } from 'react';
 import Graph from './graph.js';
+import Character from './character.js'
 
 export default class App extends Component {
   constructor(props) {
