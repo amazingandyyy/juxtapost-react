@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
 
 export default class App extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      input: ''
+    }
+  }
   render() {
     return (
-      <div>React simple starter</div>
+      <div>
+        <h1>Juxtapost</h1>
+
+      </div>
     );
   }
 }
