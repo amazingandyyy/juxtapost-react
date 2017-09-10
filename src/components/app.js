@@ -7,7 +7,7 @@ export default class App extends Component {
     super(props)
     this.state = {
       input: '',
-      characters: ['Test1','Test2','Test3','Test4','Test5']
+      characters: ['Test1','Test2','Test3','Test4','Test5','Pug','Test1','Test2','Test3','Test4','Test5','Pug']
     }
   }
 
@@ -39,7 +39,7 @@ export default class App extends Component {
           </form>
         </div>
         <br />
-        <Character character={this.state.character} />
+        <Character characters={this.state.characters} />
         <br />
         <Graph />
       </div>
